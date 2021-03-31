@@ -23,15 +23,15 @@ const config = [
     title: 'rating',
     fieldName: 'imdbRating',
   },
-//  {
-//    title: 'trailer',
-//    component: Trailer
-//  }
+ {
+   title: 'trailer',
+   component: Trailer
+ }
 ];
 
 const App = ({ data }) => (
   <div>
-    <Grid config={ config } data={ data } />
+    <Grid config={ config } data={ data } keyFieldName={'imdbID'} />
   </div>
 );
 
